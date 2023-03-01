@@ -1,0 +1,8 @@
+{
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "name": "root",
+  "scripts": {
+    "install-global": "node ./common/scripts/install-rush-pnpm-global.js"
+  }
+}
