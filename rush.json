@@ -345,5 +345,22 @@
       "packageName": "@context/app",
       "projectFolder": "example-react-context/app"
     },
+    // ------------------------------------------------------
+    {
+      "packageName": "@prop-drill/modules-common",
+      "projectFolder": "example-prop-drill/modules-common"
+    },
+    {
+      "packageName": "@prop-drill/module-user",
+      "projectFolder": "example-prop-drill/module-user"
+    },
+    {
+      "packageName": "@prop-drill/module-workspace",
+      "projectFolder": "example-prop-drill/module-workspace"
+    },
+    {
+      "packageName": "@prop-drill/app",
+      "projectFolder": "example-prop-drill/app"
+    },
   ]
 }

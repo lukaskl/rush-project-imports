@@ -5,6 +5,66 @@ importers:
   .:
     specifiers: {}
 
+  ../../example-prop-drill/app:
+    specifiers:
+      '@prop-drill/module-user': workspace:*
+      '@prop-drill/module-workspace': workspace:*
+      '@types/react': ^18.0.28
+      '@types/react-dom': ^18.0.11
+      '@vitejs/plugin-react': ^3.1.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: 4.9.5
+      vite: ^4.1.4
+    dependencies:
+      '@prop-drill/module-user': link:../module-user
+      '@prop-drill/module-workspace': link:../module-workspace
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
+      '@vitejs/plugin-react': 3.1.0_vite@4.1.4
+      typescript: 4.9.5
+      vite: 4.1.4
+
+  ../../example-prop-drill/module-user:
+    specifiers:
+      '@prop-drill/modules-common': workspace:*
+      '@types/react': ^18.0.28
+      react: ^18.2.0
+      typescript: 4.9.5
+    dependencies:
+      '@prop-drill/modules-common': link:../modules-common
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      typescript: 4.9.5
+
+  ../../example-prop-drill/module-workspace:
+    specifiers:
+      '@prop-drill/modules-common': workspace:*
+      '@types/react': ^18.0.28
+      react: ^18.2.0
+      typescript: 4.9.5
+    dependencies:
+      '@prop-drill/modules-common': link:../modules-common
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      typescript: 4.9.5
+
+  ../../example-prop-drill/modules-common:
+    specifiers:
+      '@types/react': ^18.0.28
+      react: ^18.2.0
+      typescript: 4.9.5
+    dependencies:
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      typescript: 4.9.5
+
   ../../example-react-context/app:
     specifiers:
       '@context/module-user': workspace:*
