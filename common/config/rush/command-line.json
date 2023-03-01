@@ -16,6 +16,27 @@
       "ignoreMissingScript": true,
       "summary": "Start dev command (used by vite)",
       "enableParallelism": true
+    },
+    {
+      "commandKind": "global",
+      "name": "start-direct",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "rush build --to-except @direct/app -v && rush dev --only @direct/app -v",
+      "summary": "Start @direct/app in development mode"
+    },
+    {
+      "commandKind": "global",
+      "name": "start-context",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "rush build --to-except @context/app -v && rush dev --only @context/app -v",
+      "summary": "Start @context/app in development mode"
+    },
+    {
+      "commandKind": "global",
+      "name": "start-prop-drill",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "rush build --to-except @prop-drill/app -v && rush dev --only @prop-drill/app -v",
+      "summary": "Start @prop-drill/app in development mode"
     }
   ],
   /**

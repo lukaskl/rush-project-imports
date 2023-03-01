@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "name": "root",
   "scripts": {
-    "install-global": "node ./common/scripts/install-rush-pnpm-global.js"
+    "install-global": "node ./common/scripts/install-rush-pnpm-global.js",
+    "start-direct": "rush build --to-except @direct/app -v && rush dev --only @direct/app -v",
+    "start-context": "rush build --to-except @context/app -v && rush dev --only @context/app -v",
+    "start-prop-drill": "rush build --to-except @prop-drill/app -v && rush dev --only @prop-drill/app -v"
   }
 }
