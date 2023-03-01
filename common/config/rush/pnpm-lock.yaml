@@ -5,6 +5,53 @@ importers:
   .:
     specifiers: {}
 
+  ../../example-direct/app:
+    specifiers:
+      '@direct/module-user': workspace:*
+      '@direct/module-workspace': workspace:*
+      '@types/react': ^18.0.28
+      '@types/react-dom': ^18.0.11
+      '@vitejs/plugin-react': ^3.1.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: 4.9.5
+      vite: ^4.1.4
+    dependencies:
+      '@direct/module-user': link:../module-user
+      '@direct/module-workspace': link:../module-workspace
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
+      '@vitejs/plugin-react': 3.1.0_vite@4.1.4
+      typescript: 4.9.5
+      vite: 4.1.4
+
+  ../../example-direct/module-user:
+    specifiers:
+      '@types/react': ^18.0.28
+      react: ^18.2.0
+      typescript: 4.9.5
+    dependencies:
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      typescript: 4.9.5
+
+  ../../example-direct/module-workspace:
+    specifiers:
+      '@direct/module-user': workspace:*
+      '@types/react': ^18.0.28
+      react: ^18.2.0
+      typescript: 4.9.5
+    dependencies:
+      '@direct/module-user': link:../module-user
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.28
+      typescript: 4.9.5
+
   ../../example-prop-drill/app:
     specifiers:
       '@prop-drill/module-user': workspace:*

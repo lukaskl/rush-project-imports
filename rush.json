@@ -329,6 +329,7 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
+    // ------------------------------------------------------
     {
       "packageName": "@context/modules-common",
       "projectFolder": "example-react-context/modules-common"
@@ -345,6 +346,7 @@
       "packageName": "@context/app",
       "projectFolder": "example-react-context/app"
     },
+
     // ------------------------------------------------------
     {
       "packageName": "@prop-drill/modules-common",
@@ -362,5 +364,19 @@
       "packageName": "@prop-drill/app",
       "projectFolder": "example-prop-drill/app"
     },
+
+    // ------------------------------------------------------
+    {
+      "packageName": "@direct/module-user",
+      "projectFolder": "example-direct/module-user"
+    },
+    {
+      "packageName": "@direct/module-workspace",
+      "projectFolder": "example-direct/module-workspace"
+    },
+    {
+      "packageName": "@direct/app",
+      "projectFolder": "example-direct/app"
+    }
   ]
 }
